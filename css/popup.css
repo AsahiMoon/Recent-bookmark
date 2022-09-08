@@ -1,14 +1,15 @@
 html {
   padding: 0;
   margin: 0;
+  
 }
 body {
-  min-width: 550px;
+  width: 450px;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial, helvetica, san-serif;
+  font-family:"Microsoft YaHei","微软雅黑";
   font-size: 0.8em;
 }
 ul {
@@ -25,7 +26,7 @@ a:focus {
   padding: 0.4em 0.5em;
   box-sizing: border-box;
   text-decoration: none;
-  color: #15C;
+  color: rgb(0, 0, 0);
   outline: 0;
   background-position: 0.5em 0.4em;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@ a:focus {
 }
 a:hover,
 a:focus {
-  background-color: #EEEEEE;
+  background-color: #f2f2f2f2;
 }
 h2 {
   margin: 0.3em 0 0.2em 0;
@@ -49,7 +50,27 @@ h2 {
   padding: 0.2em;
   box-sizing: border-box;
   overflow: auto;
+  
 }
+/* 滚动条样式 */
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1em;
+  background-color: #929292;
+}
+::-webkit-scrollbar-track{
+  border-radius: 1em;
+  /* 滚动条背景色 */
+  /* background-color: #929292; */
+}
+/* 鼠标触碰时颜色 */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 172, 172)
+}
+
 #groups a {
   display: table;
   width: 100%;
